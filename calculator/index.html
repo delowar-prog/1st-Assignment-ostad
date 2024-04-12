@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <style>
+      .result{
+        padding: 10px;
+        background-color: #fff;
+      }
+      .error{
+        color:red;
+        padding: 10px;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+       <div id="calculator-container" class="w-50 mx-auto bg-secondary my-5 rounded px-5 py-2" style="height:500px">
+                <h3 class="text-center text-white">Basic Calculator</h3>
+                <div class="my-3">
+                    <label for="firstNumber" class="text-white fs-5">First Number</label><br>
+                    <input type="text" name="firstNumber" id="firstNumber" class="form-control">
+                </div>
+                <div class="my-3">
+                    <label for="secondNumber" class="text-white fs-5">Second Number</label><br>
+                    <input type="text" name="secondNumber" id="secondNumber" class="form-control">
+                </div>
+                <div class="my-3">
+                    <select class="form-select custom-select" name="selectOperator" id="selectOperator" aria-label="Default select example">
+                        <option selected>Select Operation</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                      </select>
+                </div>
+                <div class="my-3">
+                    <button type="submit" id="btn-calculate" class="btn btn-primary">CALCULATE</button>
+                </div>
+            
+       </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
