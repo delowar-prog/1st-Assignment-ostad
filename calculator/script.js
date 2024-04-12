@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (selectOperator === "") {
-            displayError("Please select an operator.");
+            displayError("Please select an operation.");
             return;
         }
 
@@ -36,7 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }else if(selectOperator=='*'){
             const mul= number1 * number2;
             resultDiv.innerHTML+=`<h4> Result : ${mul}</h4>`;
-          }
+        }else if(selectOperator=='/'){
+            const div= number1 / number2;
+            resultDiv.innerHTML+=`<h4> Result : ${div}</h4>`;
+        }
+
         if (document.querySelector('.result')) {
             container.removeChild(document.querySelector('.result'));
         }
